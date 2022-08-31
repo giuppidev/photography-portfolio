@@ -17,7 +17,8 @@ export const projects: Project[] = [
     subtitle: "",
     href: "projects/luoghi",
     contentPath: "",
-    description: "",
+    description:
+      "Ovunque si vada, anche a pochi passi da casa, ci sono luoghi da vedere. E da immortalare.",
     slug: "luoghi",
     rows: 2,
     cols: 2,
@@ -28,7 +29,8 @@ export const projects: Project[] = [
     subtitle: "",
     href: "projects/persone",
     contentPath: "",
-    description: "Belle foto fatte a Valfrejus",
+    description:
+      "Che la si chiami fotografia di cerimonia, di eventi o ritratto, l'unica cosa che conta sono le persone...",
     slug: "persone",
     rows: 1,
     cols: 1,
