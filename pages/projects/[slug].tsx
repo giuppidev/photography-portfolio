@@ -82,7 +82,7 @@ const Project: NextPage = ({
           </div>
         </div>
         <div className="container lg:px-32 px-4 py-8 mx-auto items-center ">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-2">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-2">
             {images.map((img, k) => (
               <div className="w-full row-span-2" key={k}>
                 <img

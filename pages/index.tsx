@@ -29,11 +29,11 @@ const Home: NextPage = () => {
         ></link>
       </Head>
       <Header />
-      <main className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-2 my-12 mx-8">
+      <main className="grid grid-cols-1 lg:grid-cols-4 gap-2 my-12 mx-8">
         {projects.map((project, k) => {
           const coverImage = path.join(project.href, project.coverImage);
-          const rows = project.rows === 2 ? "md:row-span-2" : "md:row-span-1";
-          const cols = project.cols === 2 ? "md:col-span-2" : "md:col-span-1";
+          const rows = project.rows === 2 ? "lg:row-span-2" : "lg:row-span-1";
+          const cols = project.cols === 2 ? "lg:col-span-2" : "lg:col-span-1";
           return (
             <Link href={project.href} key={k}>
               <section
