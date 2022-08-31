@@ -42,18 +42,24 @@ export default function Header() {
             className="h-16 w-1h-16 rounded-full hover:cursor-pointer hover:ring hover:ring-white"
             onClick={() => setToggler(!toggler)}
           />
+          <p className="text-base px-4 md:mx-0">
+            Roberto De Martino nasce nel 1982 e nel 2007 si avvicina alla
+            fotografia.
+          </p>
           <p className="text-base px-4 md:mx-0 pb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-            ipsam ullam laudantium quia quibusdam, eligendi aliquam atque
-            provident quasi rerum, omnis sint tempore perspiciatis cum!
+            La sua versatilità, supportata da un costante studio della tecnica e
+            del linguaggio fotografico che dura tuttora, gli permette di
+            affrontare vari stili fotografici come lo still-life e la fotografia
+            di eventi ma con una predilezione per il ritratto e la fotografia di
+            cerimonia.
           </p>
         </div>
 
         <div className="flex flex-col md:w-1/3">
           <h2 className="my-4 text-2xl uppercase font-bold">Contatti</h2>
 
-          <p>1-800-555-1234</p>
-          <a href="#">melissa@photography.com</a>
+          <p>+39 327 93 04 382</p>
+          <a href="#">robertodemartino@rocketmail.com</a>
         </div>
         <FsLightbox toggler={toggler} sources={["/roberto-de-martino.jpeg"]} />
       </div>

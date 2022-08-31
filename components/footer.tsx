@@ -13,6 +13,7 @@ export default function Footer() {
           <p className="text-xl">Torna su</p>
         </div>
       </a>
+      <div>2022 - All rights reserved</div>
     </footer>
   );
 }
