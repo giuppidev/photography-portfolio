@@ -57,13 +57,12 @@ const Project: NextPage = ({
   }
   const slug = router.query.slug as any;
 
-  const images = project.photos.map((photo) =>
-    path.join(
-      process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_BASE_URL,
-      "w_1000,h_1000,c_limit",
-      project.contentPath,
-      photo
-    )
+  const images = project.photos.map(
+    (photo) =>
+      new URL(
+        path.join("w_1000,h_1000,c_limit", project.contentPath, photo),
+        process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_BASE_URL
+      ).href
   );
 
   return (
