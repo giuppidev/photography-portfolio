@@ -12,7 +12,7 @@ import path from "path";
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Roberto De Martino</title>
@@ -69,7 +69,7 @@ const Home: NextPage = () => {
         })}
       </main>
       <Footer />
-    </div>
+    </>
   );
 };
 
