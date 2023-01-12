@@ -91,7 +91,12 @@ const Project: NextPage = ({
                   src={img}
                   onClick={() => openLightboxOnSlide(k + 1)}
                   alt="Photo by Roberto De Martino"
-                  className="inset-0 h-full w-full object-cover object-center rounded opacity-75 hover:opacity-100 hover:cursor-pointer"
+                  className="hidden md:block inset-0 h-full w-full object-cover object-center rounded opacity-75 hover:opacity-100 hover:cursor-pointer"
+                />
+                <img
+                  src={img}
+                  alt="Photo by Roberto De Martino"
+                  className="block md:hidden inset-0 h-full w-full object-cover object-center rounded "
                 />
               </div>
             ))}
