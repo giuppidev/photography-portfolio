@@ -8,7 +8,7 @@ export default function Header() {
   const [toggler, setToggler] = useState(false);
   return (
     <header id="top">
-      <nav className="flex justify-between my-4 mx-8 uppercase font-bold">
+      <nav className="flex justify-between my-4 mx-8 uppercase font-bold ">
         <Link href={"/"}>
           <a className="hover:cursor-pointer">
             <h1 className="text-4xl md:text-2xl">Roberto De Martino</h1>

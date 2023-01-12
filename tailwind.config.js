@@ -16,10 +16,10 @@ module.exports = {
 
     extend: {
       fontFamily: {
-        bebas: ['"Bebas Neue"', "cursive"],
+        bebas: ["Bebas Neue", "cursive"],
         ptsans: ['"PT sans"', "sans-serif"],
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

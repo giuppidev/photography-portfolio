@@ -1,34 +1,15 @@
+import { PhotographIcon } from "@heroicons/react/solid";
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
-import { useState } from "react";
-import styles from "../styles/Home.module.css";
-import { MinusIcon, PhotographIcon, PlusIcon } from "@heroicons/react/solid";
-import Header from "../components/header";
 import Link from "next/link";
-import { projects } from "../projects";
-import Footer from "../components/footer";
 import path from "path";
+import Footer from "../components/footer";
+import Header from "../components/header";
+import { projects } from "../projects";
 
 const Home: NextPage = () => {
   return (
     <>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Roberto De Martino</title>
-        <meta name="description" content="Roberto De Martino - fotografo" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />{" "}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-          rel="stylesheet"
-        ></link>
-        <link
-          href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
-          rel="stylesheet"
-        ></link>
-      </Head>
       <Header />
       <main className="grid grid-cols-1 lg:grid-cols-4 gap-2 my-12 mx-8">
         {projects.map((project, k) => {
@@ -49,7 +30,7 @@ const Home: NextPage = () => {
                 className={`row-span-1 ${rows} ${cols}  gap-4 relative bg-cover bg-center`}
                 key={k}
               >
-                <div className="absolute bottom-8 left-8 text-gray-100 uppercase font-bebas">
+                <div className="absolute bottom-8 left-8 text-gray-100 uppercase">
                   <h1 className="text-2xl md:text-4xl font-bold">
                     {project.title}
                   </h1>

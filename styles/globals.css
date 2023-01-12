@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 html,
 body {
   padding: 0;
@@ -28,8 +31,7 @@ a {
     background: black;
   }
 }
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
@@ -57,12 +59,6 @@ section {
 
 section:hover .img-overlay {
   opacity: 1;
-}
-
-h1,
-h2 {
-  font-family: "Bebas Neue", cursive;
-  letter-spacing: 2px;
 }
 
 .show {
