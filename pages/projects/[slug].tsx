@@ -66,16 +66,10 @@ const Project: NextPage = ({
   );
 
   return (
-    <div className={styles.container}>
+    <>
       <Header />
       <main>
         <div className="flex flex-col items-center">
-          <Link href="/">
-            <div className="hover:cursor-pointer flex gap-2 items-center">
-              <ChevronLeftIcon className="h-5 w-5" />
-              <span>HOME</span>
-            </div>
-          </Link>
           <h1 className="text-center font-bold py-5 text-3xl dark:text-white font-besas capitalize font-bebas">
             {slug.replace("-", " ")}
           </h1>
@@ -91,12 +85,7 @@ const Project: NextPage = ({
                   src={img}
                   onClick={() => openLightboxOnSlide(k + 1)}
                   alt="Photo by Roberto De Martino"
-                  className="hidden md:block inset-0 h-full w-full object-cover object-center rounded opacity-75 hover:opacity-100 hover:cursor-pointer"
-                />
-                <img
-                  src={img}
-                  alt="Photo by Roberto De Martino"
-                  className="block md:hidden inset-0 h-full w-full object-cover object-center rounded "
+                  className="inset-0 h-full w-full object-cover object-center rounded opacity-75 hover:opacity-100 hover:cursor-pointer"
                 />
               </div>
             ))}
@@ -109,7 +98,7 @@ const Project: NextPage = ({
         />
       </main>
       <Footer />
-    </div>
+    </>
   );
 };
 
