@@ -76,7 +76,7 @@ const Project: NextPage = ({
               <span>HOME</span>
             </div>
           </Link>
-          <h1 className="text-center font-bold py-5 text-3xl dark:text-white font-besas capitalize">
+          <h1 className="text-center font-bold py-5 text-3xl dark:text-white font-besas capitalize font-bebas">
             {slug.replace("-", " ")}
           </h1>
           <div className="px-10 text-center">

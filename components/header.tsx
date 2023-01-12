@@ -8,7 +8,7 @@ export default function Header() {
   const [toggler, setToggler] = useState(false);
   return (
     <header id="top">
-      <nav className="flex justify-between my-4 mx-8 uppercase font-bold ">
+      <nav className="flex justify-between my-4 mx-8 uppercase font-bold font-bebas">
         <Link href={"/"}>
           <a className="hover:cursor-pointer">
             <h1 className="text-4xl md:text-2xl">Roberto De Martino</h1>
@@ -35,7 +35,7 @@ export default function Header() {
         }  mt-20 flex-col md:flex-row justify-start md:justify-around items-center md:items-start text-center  font-ptsans w-auto`}
       >
         <div className="flex flex-col md:w-1/3 items-center gap-2 ">
-          <h2 className=" text-2xl uppercase font-bold">About</h2>
+          <h2 className=" text-2xl uppercase font-bold font-bebas">About</h2>
           <img
             src="/roberto-de-martino.jpeg"
             alt="Roberto De Martino"
@@ -56,7 +56,9 @@ export default function Header() {
         </div>
 
         <div className="flex flex-col md:w-1/3">
-          <h2 className="my-4 text-2xl uppercase font-bold">Contatti</h2>
+          <h2 className="my-4 text-2xl uppercase font-bold font-bebas">
+            Contatti
+          </h2>
 
           <p>+39 327 93 04 382</p>
           <a href="#">robertodemartino@rocketmail.com</a>
