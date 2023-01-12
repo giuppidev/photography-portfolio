@@ -31,7 +31,12 @@ const Home: NextPage = () => {
       <Header />
       <main className="grid grid-cols-1 lg:grid-cols-4 gap-2 my-12 mx-8">
         {projects.map((project, k) => {
-          const coverImage = path.join(project.href, project.coverImage);
+          const coverImage = path.join(
+            process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_BASE_URL,
+            "w_1000,h_1000,c_limit",
+            project.contentPath,
+            project.coverImage
+          );
           const rows = project.rows === 2 ? "lg:row-span-2" : "lg:row-span-1";
           const cols = project.cols === 2 ? "lg:col-span-2" : "lg:col-span-1";
           return (
